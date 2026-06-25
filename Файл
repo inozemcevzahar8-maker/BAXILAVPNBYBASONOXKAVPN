@@ -16,3 +16,15 @@ vless://8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19@43.160.223.69:666/?type=ws&encrypti
 vless://8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19@43.160.223.69:666/?type=ws&encryption=none&flow=&host=43.160.223.69&path=%2Fproxy&security=tls&sni=43.160.223.69&allowInsecure=1&fp=chrome#🇸🇬 Сингапур (2)
 vless://2c745da3-f69f-4268-810e-389e935412e9@167.104.55.25:35401/?type=tcp&encryption=none&flow=#🇳🇱 Нидерланды, Амстердам
 vless://2c745da3-f69f-4268-810e-389e935412e9@167.104.55.25:35401/?type=tcp&encryption=none&flow=#🇳🇱 Нидерланды, Амстердам (1)
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.24.73:443#🇬🇧 Великобритания
+ss://YWVzLTI1Ni1nY206a1NMamJyQmM4NA@78.129.155.63:3030#🇬🇧 Великобритания (1)
+ss://YWVzLTI1Ni1nY206a1NMamJyQmM4NA@78.129.155.63:3030#🇬🇧 Великобритания (2)
+vless://21db6b31-6e8b-4307-9127-994c99606e15@85.90.207.152:23009?security=&encryption=none&headerType=none&type=tcp#🇦🇲 Армения
+ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@185.213.20.110:7001#🇮🇹 Италия
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388#🇪🇸 Испания
+vless://70252937-5c61-4fb0-8656-d1a16261b795@188.114.97.6:2096?path=%2Fshalana&security=tls&encryption=none&insecure=0&host=group.shalana.xyz&type=ws&allowInsecure=0&sni=group.shalana.xyz#🇸🇬 Сингапур
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMbDZjWWZYTTVEelFiZHRNTWI3MkFfanFWbk5salUzeXFl@149.104.109.74:21273#🇵🇭 Филиппины
+ss://YWVzLTI1Ni1nY206MTIz@61.171.92.202:1001#🌐 Глобальный
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4ZnNjU0RjYi1TZUVxcVJiLm9telZHZ1ZnTnBYaDNiQTF1@67.219.106.119:26286#🇦🇺 Австралия
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.15:443#🇳🇱 Нидерланды
+vless://612c872d-1370-4109-8644-f0755f97e33f@83.97.78.13:443?security=reality&encryption=none&pbk=GzOdZG9TCQSrZV7ivcmOq9tKWUf37QnoTxSHf32OfAs&headerType=none&fp=firefox&type=tcp&sni=www.samsung.com&sid=16#🇫🇮 Финляндия
