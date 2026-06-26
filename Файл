@@ -18,7 +18,7 @@ ss://YWVzLTI1Ni1nY206MTIz@61.171.92.202:1001#🌐 Глобальный
 vless://612c872d-1370-4109-8644-f0755f97e33f@83.97.78.13:443/?type=tcp&encryption=none&flow=&sni=www.samsung.com&fp=firefox&security=reality&pbk=GzOdZG9TCQSrZV7ivcmOq9tKWUf37QnoTxSHf32OfAs&sid=16#🇫🇮 Финляндия
 vless://8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19@43.160.223.69:666/?type=ws&encryption=none&flow=&host=43.160.223.69&path=%2Fproxy&security=tls&sni=43.160.223.69&allowInsecure=1&fp=chrome#🇸🇬 Сингапур
 vless://e7edd2fe-e9de-499a-b320-407435e165bb@157.22.206.81:8412/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=tradingview.com&fp=firefox&security=reality&pbk=DNN5rLd0UtiK-Clgvqk6p4Bg59aROjbPLGdvgX35wmM&sid=#🇫🇷 Франция, Париж
-vless://e6a037ff-3908-4bf9-b3e7-b1138da601f9@83.228.231.188:22000/?type=tcp&encryption=none&flow=&sni=www.yahoo.com&fp=chrome&security=reality&pbk=NbZ4uhJZ6zpvRLXODNcVDk9UgcKNahpN1h74CsV04Fs&sid=14#🇨🇭 Швейцария, Женева
+vless://e6a037ff-3908-4bf9-b3e7-b1138da601f9@83.228.231.188:22000/?type=tcp&encryption=none&flow=&sni=www.yahoo.com&fp=chrome&security=reality&pbk=NbZ4uhJZ6zpvRLXODNcVDk9UgcKNahpN1h74CsV04Fs&sid=14#🇨🇭 Швейцария, Женева🚀
 vless://142360de-43b0-4f8f-8a8e-f6c327ab91fe@2.26.117.103:443/?type=tcp&encryption=none&flow=&sni=ern.bartemeconnect.tech&fp=chrome&security=reality&pbk=2zWWH9Jl7-OsBgldT024APUnuSuzCS8-5V9VFVfM2i0&sid=8eb36ac02bd4#🇩🇪 Германия, Франкфурт
 vless://b9f5a731-ad7c-4185-9d86-89a4a043961d@185.233.131.236:443/?type=tcp&encryption=none&flow=&security=tls&sni=v3p.sabermusic.ir&alpn=h2%2Chttp%2F1.1&allowInsecure=1&fp=chrome#🇮🇷 Иран, Тегеран
 vless://d26598cf-2cdf-4219-80d0-94646dff160d@206.82.3.134:443/?type=tcp&encryption=none&flow=#🇺🇸 США, Лос-Анджелес
