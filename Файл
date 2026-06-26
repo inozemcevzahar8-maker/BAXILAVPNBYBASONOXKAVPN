@@ -1,4 +1,7 @@
-vless://2c745da3-f69f-4268-810e-389e935412e9@167.104.55.25:35401/?type=tcp&encryption=none&flow=#🇳🇱 Нидерланды
+	vless://2c745da3-f69f-4268-810e-389e935412e9@167.104.55.25:35401/?type=tcp&encryption=none&flow=#🇳🇱 Нидерланды
+vless://2c745da3-f69f-4268-810e-389e935412e9@167.104.55.25:35401/?type=tcp&encryption=none&flow=#🇳🇱 Нидерланды, Амстердам
+vless://2c745da3-f69f-4268-810e-389e935412e9@167.104.55.25:35401/?type=tcp&encryption=none&flow=#🇳🇱 Нидерланды, Амстердам (1)
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.15:443#🇳🇱 Нидерланды (1)
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4ZnNjU0RjYi1TZUVxcVJiLm9telZHZ1ZnTnBYaDNiQTF1@67.219.106.119:26286#🇦🇺 Австралия
 trojan://T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf@103.125.216.68:443/?type=tcp&security=tls#🇯🇵 Япония
 trojan://ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk@38.54.64.247:443/?type=tcp&security=tls&sni=38.54.64.247&allowInsecure=1&fp=chrome#🇿🇦 ЮАР
@@ -7,24 +10,9 @@ vless://72d1797c-cef8-410a-b8fd-db9104dc3cb0@172.64.32.75:443/?type=ws&encryptio
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388#🇪🇸 Испания
 trojan://ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed@38.60.202.163:443/?type=tcp&security=tls&sni=38.60.202.163&fp=chrome#🇦🇪 ОАЭ
 vless://21db6b31-6e8b-4307-9127-994c99606e15@85.90.207.152:23009/?type=tcp&encryption=none&flow=#🇦🇲 Армения
-trojan://ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk@38.54.64.247:443/?type=tcp&security=tls#🇿🇦 ЮАР
-ss://YWVzLTI1Ni1nY206a1NMamJyQmM4NA@78.129.155.63:3030#🇬🇧 Великобритания
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#🇪🇸 Испания
-vless://b9f5a731-ad7c-4185-9d86-89a4a043961d@185.233.131.236:443/?type=tcp&encryption=none&flow=&security=tls&sni=v3p.sabermusic.ir&alpn=h2%2Chttp%2F1.1&allowInsecure=1&fp=chrome#🇮🇷 Иран, Тегеран
-vless://9e23aaba-5bf2-4810-8369-c9bf2a9979f9@72.146.184.66:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.cloudflare.com&fp=safari&security=reality&pbk=CVbYSDZe2130NfbcGVM7P15Xy1LifR1cf0hsJKV_4V0&sid=eb4c4c6a#🇮🇹 Италия, Милан
-vless://8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19@43.160.223.69:666/?type=ws&encryption=none&flow=&host=43.160.223.69&path=%2Fproxy&security=tls&sni=43.160.223.69&allowInsecure=1&fp=chrome#🇸🇬 Сингапур (1)
-vless://8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19@43.160.223.69:666/?type=ws&encryption=none&flow=&host=43.160.223.69&path=%2Fproxy&security=tls&sni=43.160.223.69&allowInsecure=1&fp=chrome#🇸🇬 Сингапур (2)
-vless://2c745da3-f69f-4268-810e-389e935412e9@167.104.55.25:35401/?type=tcp&encryption=none&flow=#🇳🇱 Нидерланды, Амстердам
-vless://2c745da3-f69f-4268-810e-389e935412e9@167.104.55.25:35401/?type=tcp&encryption=none&flow=#🇳🇱 Нидерланды, Амстердам (1)
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.24.73:443#🇬🇧 Великобритания
-ss://YWVzLTI1Ni1nY206a1NMamJyQmM4NA@78.129.155.63:3030#🇬🇧 Великобритания (1)
-ss://YWVzLTI1Ni1nY206a1NMamJyQmM4NA@78.129.155.63:3030#🇬🇧 Великобритания (2)
-vless://21db6b31-6e8b-4307-9127-994c99606e15@85.90.207.152:23009?security=&encryption=none&headerType=none&type=tcp#🇦🇲 Армения
-ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@185.213.20.110:7001#🇮🇹 Италия
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388#🇪🇸 Испания
-vless://70252937-5c61-4fb0-8656-d1a16261b795@188.114.97.6:2096?path=%2Fshalana&security=tls&encryption=none&insecure=0&host=group.shalana.xyz&type=ws&allowInsecure=0&sni=group.shalana.xyz#🇸🇬 Сингапур
+vless://b9f5a731-ad7c-4185-9d86-89a4a043961d@185.233.131.236:443/?type=tcp&encryption=none&flow=&security=tls&sni=v3p.sabermusic.ir&alpn=h2%2Chttp%2F1.1&allowInsecure=1&fp=chrome#🇮🇷 Иран
+vless://9e23aaba-5bf2-4810-8369-c9bf2a9979f9@72.146.184.66:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.cloudflare.com&fp=safari&security=reality&pbk=CVbYSDZe2130NfbcGVM7P15Xy1LifR1cf0hsJKV_4V0&sid=eb4c4c6a#🇮🇹 Италия
+vless://70252937-5c61-4fb0-8656-d1a16261b795@188.114.97.6:2096/?type=ws&encryption=none&flow=&host=group.shalana.xyz&path=%2Fshalana&security=tls&sni=group.shalana.xyz#🇸🇬 Сингапур
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMbDZjWWZYTTVEelFiZHRNTWI3MkFfanFWbk5salUzeXFl@149.104.109.74:21273#🇵🇭 Филиппины
 ss://YWVzLTI1Ni1nY206MTIz@61.171.92.202:1001#🌐 Глобальный
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4ZnNjU0RjYi1TZUVxcVJiLm9telZHZ1ZnTnBYaDNiQTF1@67.219.106.119:26286#🇦🇺 Австралия
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.15:443#🇳🇱 Нидерланды
-vless://612c872d-1370-4109-8644-f0755f97e33f@83.97.78.13:443?security=reality&encryption=none&pbk=GzOdZG9TCQSrZV7ivcmOq9tKWUf37QnoTxSHf32OfAs&headerType=none&fp=firefox&type=tcp&sni=www.samsung.com&sid=16#🇫🇮 Финляндия
+vless://612c872d-1370-4109-8644-f0755f97e33f@83.97.78.13:443/?type=tcp&encryption=none&flow=&sni=www.samsung.com&fp=firefox&security=reality&pbk=GzOdZG9TCQSrZV7ivcmOq9tKWUf37QnoTxSHf32OfAs&sid=16#🇫🇮 Финляндия
