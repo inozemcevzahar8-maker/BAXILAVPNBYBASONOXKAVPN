@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Baxila VPN</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --accent-color: #3b82f6;
+      --accent-hover: #2563eb;
+      --text-main: #f8fafc;
+      --text-sub: #94a3b8;
+      --success-color: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      background: var(--card-bg);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .logo-badge {
+      width: 64px;
+      height: 64px;
+      background: rgba(59, 130, 246, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      color: var(--accent-color);
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      font-size: 14px;
+      color: var(--text-sub);
+      margin-bottom: 24px;
+      line-height: 1.4;
+    }
+
+    .info-card {
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .info-status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--success-color);
+      font-weight: 600;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--success-color);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--success-color);
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 16px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: transform 0.1s ease, background-color 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-primary {
+      background-color: var(--accent-color);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+    }
+
+    .btn-secondary {
+      background-color: rgba(255, 255, 255, 0.08);
+      color: var(--text-main);
+    }
+
+    .btn-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .btn-support {
+      background-color: transparent;
+      color: var(--text-sub);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    /* Модальное окно поддержки */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+      z-index: 999;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-card {
+      background: var(--card-bg);
+      border-radius: 24px;
+      padding: 24px;
+      width: 100%;
+      max-width: 320px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transform: scale(0.9);
+      transition: transform 0.2s ease;
+    }
+
+    .modal-overlay.active .modal-card {
+      transform: scale(1);
+    }
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--text-sub);
+    }
+
+    .username-box {
+      font-size: 24px;
+      font-weight: 800;
+      color: #ef4444; /* Стильный красный цвет как на макете */
+      background: rgba(239, 68, 68, 0.1);
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+      word-break: break-all;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      background: var(--success-color);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      pointer-events: none;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo-badge">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    </div>
+
+    <h1>Baxila VPN</h1>
+    <p class="subtitle">Бесплатный доступ и стабильные серверы</p>
+
+    <div class="info-card">
+      <div class="info-status">
+        <span class="dot"></span>
+        <span>Подписка активна</span>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn btn-primary" id="btn-open-happ">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Открыть в Happ
+      </button>
+
+      <button class="btn btn-secondary" id="btn-copy">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        Скопировать подписку
+      </button>
+
+      <button class="btn btn-support" id="btn-support">
+        Поддержка
+      </button>
+    </div>
+  </div>
+
+  <!-- Окно поддержки -->
+  <div class="modal-overlay" id="modal-support">
+    <div class="modal-card">
+      <div class="modal-title">Поддержка:</div>
+      <div class="username-box" id="username-text">@Tolauld1</div>
+      <div class="btn-group">
+        <button class="btn btn-primary" id="btn-copy-username">Скопировать юзернейм</button>
+        <button class="btn btn-secondary" id="btn-close-modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Скопировано!</div>
+
+  <script>
+    const tg = window.Telegram?.WebApp;
+    if (tg) {
+      tg.ready();
+      tg.expand();
+    }
+
+    const subscriptionUrl = 'https://raw.githubusercontent.com/inozemcevzahar8-maker/BAXILAVPNBYBASONOXKAVPN/refs/heads/main/%D0%A4%D0%B0%D0%B9%D0%BB';
+    const happDeepLink = 'happ://add/' + subscriptionUrl;
+    const supportUsername = '@Tolauld1';
+
+    const btnOpenHapp = document.getElementById('btn-open-happ');
+    const btnCopy = document.getElementById('btn-copy');
+    const btnSupport = document.getElementById('btn-support');
+    const modalSupport = document.getElementById('modal-support');
+    const btnCloseModal = document.getElementById('btn-close-modal');
+    const btnCopyUsername = document.getElementById('btn-copy-username');
+    const toast = document.getElementById('toast');
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2000);
+    }
+
+    function copyText(text, successMsg) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+
+      try {
+        document.execCommand('copy');
+        showToast(successMsg);
+      } catch (err) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(successMsg);
+        }).catch(() => {
+          showToast('Ошибка копирования');
+        });
+      }
+
+      document.body.removeChild(textarea);
+    }
+
+    function openHapp(e) {
+      if (e) e.preventDefault();
+      window.location.href = happDeepLink;
+    }
+
+    // Открытие модалки
+    btnSupport.addEventListener('click', () => {
+      modalSupport.classList.add('active');
+    });
+
+    // Закрытие модалки
+    btnCloseModal.addEventListener('click', () => {
+      modalSupport.classList.remove('active');
+    });
+
+    // Закрытие при клике мимо модалки
+    modalSupport.addEventListener('click', (e) => {
+      if (e.target === modalSupport) {
+        modalSupport.classList.remove('active');
+      }
+    });
+
+    // Копирование подписки
+    btnCopy.addEventListener('click', (e) => {
+      e.preventDefault();
+      copyText(subscriptionUrl, 'Ссылка подписки скопирована!');
+    });
+
+    // Копирование юзернейма
+    btnCopyUsername.addEventListener('click', (e) => {
+      e.preventDefault();
+      copyText(supportUsername, 'Юзернейм скопирован!');
+    });
+
+    btnOpenHapp.addEventListener('click', openHapp);
+  </script>
+</body>
+</html>
+
